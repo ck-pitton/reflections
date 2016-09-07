@@ -41,7 +41,12 @@ organized? How would branches help?
   to the master branch to apply any quick fixes that need doing, and then
   checkout back to the experimental branch.
 
+
+
 How do the diagrams help you visualize the branch structure?
+
+  They help you visualize which commit the branches were made during, and how
+  branches there are in the tree, and there relation to one another.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
