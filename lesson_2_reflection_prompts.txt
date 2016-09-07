@@ -1,19 +1,45 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-  It adds a hidden git folder, and enables the folder and sub-directories to be committed, and ready for version control.
+  It adds a hidden git folder, and enables the folder and sub-directories to be
+  committed, and ready for version control.
+
+
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-  The staging area is used to hold the files/folder the developer wants to be included in the next commit. The working directory is the location of all the files/folder in that project. Thus the differences are that the staging area only holds files that are committed in the the next commit.
+  The staging area is used to hold the files/folder the developer wants to be
+  included in the next commit. The working directory is the location of all the
+  files/folder in that project. Thus the differences are that the staging area
+  only holds files that are committed in the the next commit.
 
-  The value of this, is that each commit can show the files the developer had changed/worked on during that commit, instead of just committing all the files, thus making it harder to debug any issues, and narrow down where the bug might have come from.
+  The value of this, is that each commit can show the files the developer had
+  changed/worked on during that commit, instead of just committing all the
+  files, thus making it harder to debug any issues, and narrow down where the
+  bug might have come from.
+
+
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+  Using the 'git diff --staged' command you can compare the difference between
+  the files in the staging area, and the last file version. This command enables
+  you check that all your current files in the staging area all relevant to the
+  commit you are about to make, thus enabling you to keep commit logical.
+
+
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+
+  If the developer is working on some experimental features on their website,
+  then a ticket comes in with a bug that needs to be fixed, the dev could branch
+  out his current working files, and then quickly fix the bug on the master
+  branch and implement the changes. This has meant the dev has kept the changes
+  the files  they were working on for the experiments and can quickly checkout
+  to the master branch to apply any quick fixes that need doing, and then
+  checkout back to the experimental branch.
 
 How do the diagrams help you visualize the branch structure?
 
