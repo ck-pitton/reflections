@@ -61,3 +61,8 @@ the diagram the way we do?
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+  Automatic merging would certainly speed up the build process, but could lead
+  to unwanted bug, by guessing what to do when merge conflicts arise. Manual
+  merge stops this from happening, by leaving it up to the developer to
+  fix any merge conflicts.
