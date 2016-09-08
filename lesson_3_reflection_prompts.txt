@@ -16,3 +16,24 @@
       committed/pushed them yet.
 
     ****************************************************************************
+
+3.  Describe the differences between forks, clones, and branches. When would
+    you use one instead of another?
+
+    - Branches
+      Branches are used to essential make copies of the master branch, so you
+      can make changes to the files without having to worry about effecting the
+      master branch, and when you are happy with these changes you can merge it
+      back into the master branch.
+
+    - Fork
+      On GitHub you can make a fork, which a copy of somebody else's repository,
+      which you can make changes to without effecting the original owners
+      repository.
+
+    - Clones
+      If you wish to copy a repository found on GitHub to your local machine,
+      you can do so in the terminal by cloning the repository. This sets up a
+      remote to that repository, and depending on your access status to that
+      repository you can now push changes to the repository on Github from you
+      local machine.
