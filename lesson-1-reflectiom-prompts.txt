@@ -1,53 +1,78 @@
-How did viewing a diff between two versions of a file help you see the bug that
-was introduced?
+1.  How did viewing a diff between two versions of a file help you see the bug
+    that was introduced?
 
-    The diff command allowed us to compare the two files, and print out the differences it found into the terminal.
+      The diff command allowed us to compare the two files, and print out the
+      differences it found into the terminal.
 
-    The highlighting of the differences, enabled us to inspect each change, thus allowing us to notice the typo.
+      The highlighting of the differences that between the two files, made it
+      easier to notice the typo that had been made in the change.
 
+    ****************************************************************************
 
+2.  How could having easy access to the entire history of a file make you a
+    more efficient programmer in the long term?
 
-How could having easy access to the entire history of a file make you a more
-efficient programmer in the long term?
+      In future in projects you could stumble upon similar issues or bugs
+      you've had in previous projects. Being able to go back to them projects,
+      and locate the moment the bug was fixed, and how, will allow you to
+      quickly find the solution for your latest project.
 
-    You could be able to see how you solved problems in the past, that you may be having in a new project.
+      Being able to step back to previous stable versions when the current
+      version is having issues, means you revert back to the stable version,
+      while fixing the issue on the current version you are working on.
 
-    You could quickly revert back to previous stable versions if the changes you make cause issues, or check the differences to see were you may be going wrong.
+    ****************************************************************************
 
+3.  What do you think are the pros and cons of manually choosing when to create
+    a commit, like you do in Git, vs having versions automatically saved, like
+    Google docs does?
 
+      It is possible that you forgot to make a logical commit often when
+      heavily focused on several tasks, and have no way of jumping back to that
+      point to make the commit.
 
-What do you think are the pros and cons of manually choosing when to create a
-commit, like you do in Git, vs having versions automatically saved, like Google
-docs does?
+      Auto-saves could be saving at points when the file isn't ready and
+      contains faults, or don't make logical sense for a commit.
 
-  It is possible that you forgot to make a commit often when heavily focused on several tasks.
+    ****************************************************************************
 
-  Auto-saves could be saving at points when the file isn't ready and contains faults.
+4.  Why do you think some version control systems, like Git, allow saving
+    multiple files in one commit, while others, like Google Docs, treat each
+    file separately?
 
+      Git is a version control system designed with coding projects in mind,
+      and within these types of projects many of the files will require one
+      another to run properly. When the developer commits a group of files
+      together they may have worked on a logical change together, thus the
+      importance to commit them together.
 
+      If you are working on a word document on Google Docs, it likely doesn't
+      depend any other files, thus the decision to only save on file at a time
 
-Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
+    ****************************************************************************
 
-    Git is designed for coding projects, in which files are often linked and require one another to run. Being able to see how they all looked at a particular commit if important, as the person coding on the files at that time felt all files worked together ok. If you saved one file, and not the others that may have edits, then that commit might not work properly.
+5.  How can you use the commands git log and git diff to view the history of
+    files?
 
-    Other types of folder/projects might not require multiple file saves, as the files are not linked, and do not depend on one another.
+      Git log will show a list of previous commits, and there commit IDs. With
+      git diff you can use these ID's to compare the differences/changes
+      between two commits.
 
+    ****************************************************************************
 
+6.  How might using version control make you more confident to make changes
+    that could break something?
 
-How can you use the commands git log and git diff to view the history of files?
+      When knowing you have backups of previous files that you can revert to
+      easily, it gives you the confidence, that even if you break something,
+      you can easily just jump back to a working commit.
 
-    Git log will show a list of previous commits, and there commit IDs. With git diff you can use these ID's to compare the differences/changes between to commits.
+    ****************************************************************************
 
+7.  Now that you have your workspace set up, what do you want to try using Git
+    for?
 
-
-How might using version control make you more confident to make changes that
-could break something?
-
-    When knowing you have backups of previous files that you can revert to easily, it gives you the confidence, that even if you break something, you can easily just jump back to a working commit.
-
-
-
-Now that you have your workspace set up, what do you want to try using Git for?
-
-    Future projects on my Udacity course to give me practice using Git, and to help whenever I make too many changes that may break my project slightly, or any changes I make that I don't like.
+    Future projects on my Udacity course to give me practice using Git, and to
+    help whenever I make too many changes that may break my project slightly,
+    or any changes I make that I don't like. Then possible in the future when
+    paring up with others to work on projects.
