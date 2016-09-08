@@ -1,68 +1,68 @@
-What happens when you initialize a repository? Why do you need to do it?
+1.  What happens when you initialize a repository? Why do you need to do it?
 
-  It adds a hidden git folder, and enables the folder and sub-directories to be
-  committed, and ready for version control.
+      It adds a hidden git folder, and enables the folder and sub-directories
+      to be committed, and ready for version control.
 
+    ****************************************************************************
 
+2.  How is the staging area different from the working directory and the
+    repository? What value do you think it offers?
 
-How is the staging area different from the working directory and the repository?
-What value do you think it offers?
+      The staging area is used to hold the files/folder the developer wants to
+      be included in the next commit. The working directory is the location of
+      all the files/folder in that project. Thus the differences are that the
+      staging area only holds files that developers wants to be included in the
+      next commit, and the working directory contains all files and folders.
 
-  The staging area is used to hold the files/folder the developer wants to be
-  included in the next commit. The working directory is the location of all the
-  files/folder in that project. Thus the differences are that the staging area
-  only holds files that are committed in the the next commit.
+      The value of this, is that each commit can show the files the developer
+      had changed/worked on during that commit, instead of just committing all
+      the files, thus making it harder to debug any issues, and narrow down
+      where the bug might have come from.
 
-  The value of this, is that each commit can show the files the developer had
-  changed/worked on during that commit, instead of just committing all the
-  files, thus making it harder to debug any issues, and narrow down where the
-  bug might have come from.
+    ****************************************************************************
 
+3.  How can you use the staging area to make sure you have one commit per
+    logical change?
 
+      Using the 'git diff --staged' command you can compare the difference
+      between the files in the staging area, and the last commit file version.
+      This command enables you check that all your current files in the staging
+      area all relevant to the commit you are about to make, thus enabling you
+      to keep commit logical.
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+    ****************************************************************************
 
-  Using the 'git diff --staged' command you can compare the difference between
-  the files in the staging area, and the last file version. This command enables
-  you check that all your current files in the staging area all relevant to the
-  commit you are about to make, thus enabling you to keep commit logical.
+4.  What are some situations when branches would be helpful in keeping your
+    history organized? How would branches help?
 
+      Branches allow you veer off from the master branch, and work on some
+      experimental features that may cause issues, while keeping the master
+      branch live and stable.
 
+    ****************************************************************************
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+5. How do the diagrams help you visualize the branch structure?
 
-  If the developer is working on some experimental features on their website,
-  then a ticket comes in with a bug that needs to be fixed, the dev could branch
-  out his current working files, and then quickly fix the bug on the master
-  branch and implement the changes. This has meant the dev has kept the changes
-  the files  they were working on for the experiments and can quickly checkout
-  to the master branch to apply any quick fixes that need doing, and then
-  checkout back to the experimental branch.
+    They help you visualize which commit the branches were made during, and how
+    many branches there are in the tree, and their relation to one another.
 
+    ****************************************************************************
 
+6.  What is the result of merging two branches together? Why do we represent it
+    in the diagram the way we do?
 
-How do the diagrams help you visualize the branch structure?
+      Merging two branches mergers the contents of both branches together, and
+      ensures there are no conflicts in the mergers within the files.
 
-  They help you visualize which commit the branches were made during, and how
-  branches there are in the tree, and there relation to one another.
+      The diagram shows which branch the commit belonged to, and the commit the
+      branches were created on, and merged together on.
 
+    ****************************************************************************
 
+7.  What are the pros and cons of Git’s automatic merging vs. always doing
+    merges manually?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
-
-  Merging two branches mergers the contents of both branches together, and
-  ensures there are no conflicts in the mergers within the files.
-
-  The diagram shows which branch the commit belonged to, and the commit the
-  branches were created on, and merged together on.
-
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
-
-  Automatic merging would certainly speed up the build process, but could lead
-  to unwanted bug, by guessing what to do when merge conflicts arise. Manual
-  merge stops this from happening, by leaving it up to the developer to
-  fix any merge conflicts.
+      Automatic merging would certainly speed up the build process, but could
+      lead to unwanted bug, by guessing what to do when merge conflicts arise.
+      Manual merge stops this from happening, by leaving it up to the developer
+      to fix any merge conflicts.
