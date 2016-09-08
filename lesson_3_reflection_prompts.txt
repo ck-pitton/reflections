@@ -37,3 +37,12 @@
       remote to that repository, and depending on your access status to that
       repository you can now push changes to the repository on Github from you
       local machine.
+
+    ****************************************************************************
+
+4.  What is the benefit of having a copy of the last known state of the remote
+    stored locally?
+
+      If you going to working offline for a few hours you can fetch the latest repository from GitHub, while still working on your own local master
+      branch without merging any of the differences, but still have the ability
+      to refer to any changes/conflicts in the origin/master branch.
