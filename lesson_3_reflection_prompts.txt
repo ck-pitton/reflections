@@ -46,3 +46,13 @@
       If you going to working offline for a few hours you can fetch the latest repository from GitHub, while still working on your own local master
       branch without merging any of the differences, but still have the ability
       to refer to any changes/conflicts in the origin/master branch.
+
+    ****************************************************************************
+
+5.  How would you collaborate without using Git or GitHub? What would be easier,
+    and what would be harder?
+
+      You could collaborate by all working off the same directory on a local
+      server. It would be easier knowing you are working on the same files.
+      But it would be difficult in that you couldn't work on the same file at
+      the same time, and then just later merge the files together.
