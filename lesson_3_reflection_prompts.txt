@@ -56,3 +56,11 @@
       server. It would be easier knowing you are working on the same files.
       But it would be difficult in that you couldn't work on the same file at
       the same time, and then just later merge the files together.
+
+6. When would you want to make changes in a separate branch rather than
+  directly in master? What benefits does each approach have?
+
+    If the changes you are making are experimental, or possibly need to be
+    approved by others, it could be an good idea to create and work on a
+    different branch from the main, until all others working on the projects
+    approve of your changes. 
